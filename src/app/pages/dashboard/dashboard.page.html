@@ -7,8 +7,8 @@
     <ion-col>
       <ion-card class="bg-blue color-white" (click)="navigateDashboard('all')">
         <div class="card-title">12</div>
-        <ion-label class="card-subtitle" >Total Complaints</ion-label>
-        
+        <ion-label class="card-subtitle">Total Complaints</ion-label>
+
         <ion-icon name="paper"></ion-icon>
       </ion-card>
     </ion-col>
@@ -66,4 +66,39 @@
       </ion-card>
     </ion-col>
   </ion-row>
+  <!-- fab placed to the bottom start
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-dropup"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+ -->
+  <!-- 
+ fab placed in the center of the content with a list on each side 
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-dropup"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-icon name="logo-vimeo"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="start">
+      <ion-fab-button><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end">
+      <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab> -->
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button class="primary">+</ion-fab-button>
+
+    <ion-fab-list side="top">
+      <ion-label class="card-subtitle">
+        <ion-icon name="create"></ion-icon>New</ion-label>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>

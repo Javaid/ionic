@@ -1,0 +1,24 @@
+.date-container {
+    padding-right: 0.5rem;
+    text-align: center;
+    margin-right: 0.6rem;
+    border-right: solid 1px #ccc;
+    h2 {
+        font-size: 1.5rem;
+        margin: 0;
+        font-weight: bold;
+    }
+    p {
+        margin: 0;
+        font-weight: 200;
+    }
+}
+.complaint-content {
+    white-space: normal;
+    h3 {
+        padding-bottom: .5rem;
+    }
+    h4 {
+        text-transform: uppercase;
+    }
+}

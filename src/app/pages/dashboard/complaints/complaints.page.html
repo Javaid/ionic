@@ -1,9 +1,29 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>complaints</ion-title>
+    <ion-title>Complaints</ion-title>
+    <ion-buttons slot="start">      
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
-<ion-content>
-
+<ion-content [scrollEvents]="true">
+  <ion-list>
+    <ion-item *ngFor="let complaint of complaints">
+      <div class="date-container">
+        <h2 class="date">{{complaint.date}}</h2>
+        <ion-text color="success">
+        <p class="">{{complaint.month}}</p>
+        <p class="">{{complaint.year}}</p>
+      </ion-text>
+      </div>
+       <ion-label class="complaint-content">
+         <h2><strong>{{complaint.id}}</strong></h2>
+          <h3>{{complaint.title}}</h3>
+          <h4><strong>Status</strong></h4>
+          <ion-badge color="{{complaint.statussign}}" slot="end">{{complaint.status}}</ion-badge>
+          <ion-button expand="block" size="small">See Details / تفصیلات دیکھیں </ion-button>
+       </ion-label>
+       <ion-icon name="ios-arrow-forward" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
 </ion-content>
