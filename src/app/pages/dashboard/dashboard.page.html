@@ -1,0 +1,69 @@
+<ion-content class="card-background-page">
+  <div class="pageheading">
+    <ion-icon name="chatboxes"></ion-icon>
+    <h2>Complaints</h2>
+  </div>
+  <ion-row>
+    <ion-col>
+      <ion-card class="bg-blue color-white" (click)="navigateDashboard('all')">
+        <div class="card-title">12</div>
+        <ion-label class="card-subtitle" >Total Complaints</ion-label>
+        
+        <ion-icon name="paper"></ion-icon>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-card class="bg-red color-white">
+        <div class="card-title">12</div>
+        <div class="card-subtitle">Open <br />Complaints</div>
+        <ion-icon name="person"></ion-icon>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card class="bg-green color-white">
+        <div class="card-title">12</div>
+        <div class="card-subtitle">Closed <br />Complaints</div>
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <div class="pageheading">
+    <h2>Feedbacks</h2>
+  </div>
+
+  <ion-row>
+    <ion-col>
+      <ion-card class="bg-grey color-green">
+        <div class="card-title">12</div>
+        <div class="card-subtitle">Poisitve <br />Feedbacks</div>
+        <ion-icon name="thumbs-up"></ion-icon>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card class="bg-grey color-red">
+        <div class="card-title">12</div>
+        <div class="card-subtitle">Negative <br />Feedbacks</div>
+        <ion-icon name="thumbs-down"></ion-icon>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-card class="bg-grey color-yellow">
+        <div class="card-title">12</div>
+        <div class="card-subtitle">Pending <br />Feedbacks</div>
+        <ion-icon name="time"></ion-icon>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card class="bg-grey color-red">
+        <div class="card-title">12</div>
+        <div class="card-subtitle">Drop <br />Complaints</div>
+        <ion-icon name="trash"></ion-icon>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
